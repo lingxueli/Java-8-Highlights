@@ -1,0 +1,20 @@
+lambda expression:
+
+
+functional interface: the interface with exactly one abstract method.
+
+to provide the implementation of the abstract method of functional interface.
+
+The whole expression is an instance of the functional interface.
+
+2 ways of achieveing this:
+1. lambda expression
+	Runnable r1 = () -> System.out.println("Hello World!")
+
+2. anonymouse class
+	Runnable r2 = new Runnable(){
+		public void run(){
+			System.out.println("Hello World!")
+		}
+	};
+
